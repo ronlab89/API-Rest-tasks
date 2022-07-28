@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
     res.send(`<h1>Server Working!</h1>`);
 });
 
-app.use('/api/v1', authRouter);
+app.use('/api/v1/auth', authRouter);
 
 app.listen(port, () => console.log('🚀 Server listen on port: http://localhost:5000')); 
